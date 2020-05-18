@@ -1,22 +1,18 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+{% include head.html %}
+<body class="site{% if site.animated %} animated fade-in-down{% endif %}">
 
-  {%- include head.html -%}
+  <div class="site-wrap">
+    {% include header.html %}
 
-  <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
         {{ content }}
       </div>
-    </main>
+    </div>
+  </div>
 
-    {%- include footer.html -%}
-
-  </body>
-  
-  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-
+  {% include footer.html %}
+</body>
 </html>
