@@ -4,7 +4,7 @@ email:       manan@mananagarwal.in
 author:      Manan Agarwal
 description: "Learning.Building.Exploring"
 baseurl:     ""
-url:         "https://mixyll.saikiransripada.com"
+url:         
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
