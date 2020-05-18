@@ -2,7 +2,7 @@
 {%- if page.title -%}
 {{ page.title }}
 {%- endif -%} {{ content }} {%- if site.posts.size > 0 -%}
-{%- for post in site.posts -%} {% if post.tags contains "booksummaries" %}
+{%- for post in site.posts -%} {% if post.tags contains "bookshelf" %}
 {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%} {{ post.date | date: date_format }}
 {{ post.title | escape }}
 {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
