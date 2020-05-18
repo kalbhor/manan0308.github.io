@@ -8,6 +8,7 @@ url:
 date_format: "%b %-d, %Y"
 header_pages:
  - about.md
+ - bookshelf.md
  - contact.html
 
 google_analytics:
