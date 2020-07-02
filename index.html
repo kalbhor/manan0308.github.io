@@ -7,6 +7,7 @@ layout: default
   {% if posts_count > 0 %}
     <div class="posts">
       {% for post in paginator.posts %}
+	    {% if post.tags contains "main" %}
         <div class="post py3">
           <p class="post-meta">
 	    {% if site.date_format %}
@@ -24,6 +25,7 @@ layout: default
             {% endif %}
           </span>
         </div>
+	   {% endif %}
       {% endfor %}
     </div>
 
